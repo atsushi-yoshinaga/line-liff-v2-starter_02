@@ -17,7 +17,7 @@ appboy.initialize('5cfb6f16-494e-41a7-95fd-72c73fbe7338',
  { baseUrl: 'sondheim.braze.com',
    enableLogging: true,
    minimumIntervalBetweenTriggerActionsInSeconds: 5,
-   sessionTimeoutInSeconds: 600,
+   sessionTimeoutInSeconds: 60,
    enableHtmlInAppMessages:true,
    enableSdkAuthentication: true
   });
@@ -91,6 +91,8 @@ appboy.display.automaticallyShowNewInAppMessages();
         >
           LINE Developers Console
         </a>
+        <button class= "home__buttons__button button--secondary" onclick="appboy.logCustomEvent('sample_event')">CustomEventTest</button>
+        <button class= "home__buttons__button button--secondary" onclick="appboy.changeUser('atsushi_yoshinaga_liff_2')">ChangeUser</button>
 
       </div>
     </div>
